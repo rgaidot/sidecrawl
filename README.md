@@ -88,8 +88,8 @@ Sidecrawl has an API to show the results.
 * Website configurations
 http://localhost:5000/v1/websites/?name=amazon
 
-* Website sitemap - if you have declared many sitemap, add `i` on params
-http://localhost:5000/v1/websites/sitemap?name=amazon&i=3
+* Website sitemap - if you have declared many sitemap, add `source` on params
+http://localhost:5000/v1/websites/sitemap?name=amazon&source=0
 
 * Retrieve page elements by url
 http://localhost:5000/v1/pages/show?url=http://www.amazon.com/Matrix-Keanu-Reeves/dp/B000HAB4KS/&website_name=amazon
@@ -107,4 +107,3 @@ $ rake crawl['amazon']
 ## Performance: MRI, JRuby, Rubinius
 
 SideCrawl isn't tied to a single Ruby runtime - it is able to run on MRI Ruby, JRuby and Rubinius today. Depending on which platform you are working with, you will see different performance characteristics.
-```
